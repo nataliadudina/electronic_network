@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "electronic-network"
+version = "0.1.0"
+description = ""
+authors = ["Natalia Dudina"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.4"
+psycopg2 = "^2.9.9"
+djangorestframework = "^3.15.1"
+python-dotenv = "^1.0.1"
+flake8 = "^7.0.0"
+django-filter = "^24.2"
+drf-yasg = "^1.21.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
