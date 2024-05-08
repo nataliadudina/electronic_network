@@ -1,0 +1,119 @@
+[
+    {
+      "model": "networks.networknode",
+      "pk": 1,
+      "fields": {
+        "name": "Factory Electronics",
+        "contacts": [1],
+        "products": [1, 2, 6],
+        "supplier": null,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 0
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 2,
+      "fields": {
+        "name": "Tech Innovations",
+        "contacts": [2],
+        "products": [3, 5, 9, 10],
+        "supplier": null,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 0
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 3,
+      "fields": {
+        "name": "Electro Components",
+        "contacts": [3],
+        "products": [4, 7, 8],
+        "supplier": null,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 0
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 4,
+      "fields": {
+        "name": "Tech Mart",
+        "contacts": [4],
+        "products": [1, 2, 3, 7],
+        "supplier": 1,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 1
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 5,
+      "fields": {
+        "name": "Gadget Galaxy",
+        "contacts": [5],
+        "products": [1, 3, 4, 8, 9, 10],
+        "supplier": 2,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 1
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 6,
+      "fields": {
+        "name": "Electro Store",
+        "contacts": [6],
+        "products": [5, 6],
+        "supplier": 1,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 1
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 7,
+      "fields": {
+        "name": "Mobile Master",
+        "contacts": [7],
+        "products": [1, 3, 4, 7, 9],
+        "supplier": 3,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 2
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 8,
+      "fields": {
+        "name": "Laptop Lair",
+        "contacts": [8],
+        "products": [2, 5, 8, 10],
+        "supplier": 5,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 2
+      }
+    },
+  {
+      "model": "networks.networknode",
+      "pk": 9,
+      "fields": {
+        "name": "Watch Workshop",
+        "contacts": [9],
+        "products": [3, 7, 9],
+        "supplier": 6,
+        "debt_amount": "0.00",
+        "creation_time": "2024-04-10T00:00:00Z",
+        "level": 2
+      }
+    }
+]

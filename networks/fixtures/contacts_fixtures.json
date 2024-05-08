@@ -1,0 +1,119 @@
+[
+  {
+    "model": "networks.contacts",
+    "pk": 1,
+    "fields": {
+      "department": "Sales",
+      "email": "factoryelectronics@example.com",
+      "country": "Canada",
+      "city": "Toronto",
+      "street": "Main St",
+      "building": 12,
+      "network_node": 1
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 2,
+    "fields": {
+      "department": null,
+      "email": "techinnovations@example.com",
+      "country": "Canada",
+      "city": "Vancouver",
+      "street": "Broadway",
+      "building": 4,
+      "network_node": 2
+    }
+  },
+  {
+    "department": null,
+    "model": "networks.contacts",
+    "pk": 3,
+    "fields": {
+      "email": "electrocomponents@example.com",
+      "country": "USA",
+      "city": "Los Angeles",
+      "street": "Broadway",
+      "building": 2,
+      "network_node": 3
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 4,
+    "fields": {
+      "department": "Marketing",
+      "email": "techmart@example.com",
+      "country": "USA",
+      "city": "Chicago",
+      "street": "Michigan Avenue",
+      "building": 44,
+      "network_node": 4
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 5,
+    "fields": {
+      "department": null,
+      "email": "gadgetgalaxy@example.com",
+      "country": "USA",
+      "city": "Houston",
+      "street": "Westheimer Road",
+      "building": 15,
+      "network_node": 5
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 6,
+    "fields": {
+      "department": null,
+      "email": "electrostore@example.com",
+      "country": "USA",
+      "city": "Philadelphia",
+      "street": "Market Street",
+      "building": 8,
+      "network_node": 6
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 7,
+    "fields": {
+      "department": null,
+      "email": "mobilemaster@example.com",
+      "country": "USA",
+      "city": "Phoenix",
+      "street": "Camelback Road",
+      "building": 10,
+      "network_node": 7
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 8,
+    "fields": {
+      "department":"Logistics ",
+      "email": "laptoplair@example.com",
+      "country": "USA",
+      "city": "San Diego",
+      "street": "El Cajon Boulevard",
+      "building": 35,
+      "network_node": 8
+    }
+  },
+  {
+    "model": "networks.contacts",
+    "pk": 9,
+    "fields": {
+      "department": "Purchasing",
+      "email": "watchworkshop@example.com",
+      "country": "USA",
+      "city": "Dallas",
+      "street": "Elm Street",
+      "building": 7,
+      "network_node": 9
+    }
+  }
+]

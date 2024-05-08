@@ -1,0 +1,102 @@
+[
+  {
+    "model": "networks.product",
+    "pk": 1,
+    "fields": {
+      "name": "Smartphone X",
+      "model": "X100",
+      "release_date": "2023-01-01",
+      "sales_channel": [1, 4, 5, 7]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 2,
+    "fields": {
+      "name": "Laptop Y",
+      "model": "Y200",
+      "release_date": "2023-02-15",
+      "sales_channel": [1, 4, 8]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartwatch Z",
+      "model": "Z300",
+      "release_date": "2023-03-20",
+      "sales_channel": [4, 5, 7, 9]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 4,
+    "fields": {
+      "name": "Tablet A",
+      "model": "A400",
+      "release_date": "2023-04-05",
+      "sales_channel": [3, 5, 7]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 5,
+    "fields": {
+      "name": "Gaming Console B",
+      "model": "B500",
+      "release_date": "2023-05-10",
+      "sales_channel": [2, 6, 8]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 6,
+    "fields": {
+      "name": "Smart TV C",
+      "model": "C600",
+      "release_date": "2023-06-15",
+      "sales_channel": [1, 6]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 7,
+    "fields": {
+      "name": "Wireless Earbuds D",
+      "model": "D700",
+      "release_date": "2023-07-20",
+      "sales_channel": [3, 4, 7, 9]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 8,
+    "fields": {
+      "name": "Smart Speaker E",
+      "model": "E800",
+      "release_date": "2023-08-05",
+      "sales_channel": [3, 5, 8]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 9,
+    "fields": {
+      "name": "Fitness Tracker F",
+      "model": "F900",
+      "release_date": "2023-09-10",
+      "sales_channel": [2, 5, 7, 9]
+    }
+  },
+  {
+    "model": "networks.product",
+    "pk": 10,
+    "fields": {
+      "name": "VR Headset G",
+      "model": "G1000",
+      "release_date": "2023-10-15",
+      "sales_channel": [2, 5, 8]
+    }
+  }
+]
