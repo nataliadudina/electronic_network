@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.urls import reverse
 from django.utils import timezone
 from rest_framework import status
@@ -11,6 +12,10 @@ class NetworkNodeTestCase(APITestCase):
 
     def setUp(self) -> None:
         self.client = APIClient()
+
+        # Создание и авторизация пользователей
+        self.user = get_user_model().objects.create(username='username', password='password')
+        self.client.force_authenticate(user=self.user)
 
         # Создание экземпляров продуктов и контактов
         self.product1 = Product.objects.create(name='Product 1', model='M-1000', release_date='2020-09-05')
@@ -144,6 +149,12 @@ class ProductTestCase(APITestCase):
 
     def setUp(self) -> None:
         self.client = APIClient()
+
+        # Создание и авторизация пользователей
+        self.user = get_user_model().objects.create(username='username', password='password')
+        self.client.force_authenticate(user=self.user)
+
+        # Создание продукта
         self.product1 = Product.objects.create(name='Product 1', model='M-1000', release_date='2020-09-05')
         self.product2 = Product.objects.create(name='Product 2', model='M-2000', release_date='2020-10-05')
 
@@ -215,6 +226,12 @@ class ContactsTestCase(APITestCase):
 
     def setUp(self) -> None:
         self.client = APIClient()
+
+        # Создание и авторизация пользователей
+        self.user = get_user_model().objects.create(username='username', password='password')
+        self.client.force_authenticate(user=self.user)
+
+        # Создание контактов
         self.contacts1 = Contacts.objects.create(email='info@factory.com', country='Russia', city='Moscow')
         self.contacts2 = Contacts.objects.create(email='sales@factory.com', country='Russia', city='Moscow')
 

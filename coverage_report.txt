@@ -9,9 +9,9 @@ networks\migrations\__init__.py                             0      0   100%
 networks\models.py                                         64      9    86%
 networks\pagination.py                                      5      0   100%
 networks\serializers.py                                    62      3    95%
-networks\tests.py                                         130      0   100%
+networks\tests.py                                         137      0   100%
 networks\urls.py                                            9      0   100%
 networks\validators.py                                     14      1    93%
-networks\views.py                                          31      0   100%
+networks\views.py                                          37      0   100%
 ---------------------------------------------------------------------------
-TOTAL                                                     370     15    96%
+TOTAL                                                     383     15    96%

@@ -1,11 +1,13 @@
 from django.db.models import Count
 from rest_framework import viewsets, generics
 from rest_framework.filters import SearchFilter
+from rest_framework.permissions import IsAuthenticated
 
 from networks.models import NetworkNode, Product, Contacts
 from networks.pagination import CustomPaginator
 from networks.serializers import NetworkNodeSerializer, ContactsSerializer, NetworkNodeDetailSerializer, \
     ProductSerializer, NetworkNodeCreateSerializer
+from users.permissions import IsActive
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -13,6 +15,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
     pagination_class = CustomPaginator
+    permission_classes = [IsAuthenticated, IsActive]
 
 
 class ContactsViewSet(viewsets.ModelViewSet):
@@ -20,6 +23,7 @@ class ContactsViewSet(viewsets.ModelViewSet):
     serializer_class = ContactsSerializer
     queryset = Contacts.objects.all()
     pagination_class = CustomPaginator
+    permission_classes = [IsAuthenticated, IsActive]
 
 
 class NetworkNodeAPIView(generics.ListCreateAPIView):
@@ -28,6 +32,7 @@ class NetworkNodeAPIView(generics.ListCreateAPIView):
     filter_backends = [SearchFilter]
     search_fields = ['contacts__country']
     pagination_class = CustomPaginator
+    permission_classes = [IsAuthenticated, IsActive]
 
     def get_serializer_class(self):
         """ Определяет класс сериализатора в зависимости от метода запроса """
@@ -49,3 +54,4 @@ class NetworkNodeRetrieveAPIView(generics.RetrieveUpdateDestroyAPIView):
     """ API эндпоинт для получения, обновления и удаления конкретного узла сети """
     serializer_class = NetworkNodeDetailSerializer
     queryset = NetworkNode.objects.all()
+    permission_classes = [IsAuthenticated, IsActive]

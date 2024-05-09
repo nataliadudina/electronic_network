@@ -43,7 +43,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Contacts)
 class ContactsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'network_node',  'email', 'department', 'country', 'city', 'street', 'building')
+    list_display = ('id', 'network_node', 'email', 'department', 'country', 'city', 'street', 'building')
     readonly_fields = ('network_node',)
     list_display_links = ('id', 'network_node')
     search_fields = ('network_node__name',)

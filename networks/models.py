@@ -81,7 +81,7 @@ class NetworkNode(models.Model):
             raise ValidationError("Retail or Consumer must have a supplier.")
 
     def save(self, *args, **kwargs):
-        self.full_clean()    # Вызов полной валидации
+        self.full_clean()  # Вызов полной валидации
         super().save(*args, **kwargs)
 
     def __str__(self):
