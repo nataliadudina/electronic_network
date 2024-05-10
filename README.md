@@ -67,7 +67,8 @@ REST API реализовано на Python и предоставляет сле
 9. В проекте есть фикстуры с тестовыми данными для таблиц базы данных. Для загрузки используйте команду:
 > **python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixtures/сontacts_fixtures.json networks/fixtures/networks_fixtures.json**
 
-10. Запустите сервер: python manage.py runserver
+10. Запустите сервер:
+> **python manage.py runserver**
 
 Подробная документация доступна по адресам:
 
