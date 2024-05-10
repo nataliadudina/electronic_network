@@ -65,9 +65,9 @@ python manage.py csu
 Убедитесь, что в файле .env прописаны username и password для суперпользователя.
 8. Примените миграции: python manage.py migrate
 9. В проекте есть фикстуры с тестовыми данными для таблиц базы данных. Для загрузки используйте команду:
-***
+<pre>
 python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixtures/сontacts_fixtures.json networks/fixtures/networks_fixtures.json
-***
+</pre>
 10. Запустите сервер: python manage.py runserver
 
 Подробная документация доступна по адресам:
@@ -76,4 +76,4 @@ python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixt
 > 
 > **http://127.0.0.1:8000/redoc/**
 
-Все контроллеры покрыты тестами. Jбщее покрытие кода тестами 96%. Отчёт находится в файле **coverage_report.txt**  
+Все контроллеры покрыты тестами. Общее покрытие кода тестами 96%. Отчёт находится в файле **coverage_report.txt**  
