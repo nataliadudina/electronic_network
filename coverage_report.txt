@@ -1,0 +1,17 @@
+Name                                                    Stmts   Miss  Cover
+---------------------------------------------------------------------------
+networks\__init__.py                                        0      0   100%
+networks\admin.py                                          41      2    95%
+networks\apps.py                                            4      0   100%
+networks\migrations\0001_initial.py                         6      0   100%
+networks\migrations\0002_alter_contacts_department.py       4      0   100%
+networks\migrations\__init__.py                             0      0   100%
+networks\models.py                                         64      9    86%
+networks\pagination.py                                      5      0   100%
+networks\serializers.py                                    62      3    95%
+networks\tests.py                                         137      0   100%
+networks\urls.py                                            9      0   100%
+networks\validators.py                                     14      1    93%
+networks\views.py                                          37      0   100%
+---------------------------------------------------------------------------
+TOTAL                                                     383     15    96%
