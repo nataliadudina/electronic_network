@@ -22,10 +22,9 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Task Tracker Djando",
+        title="Electronic Network",
         default_version='v1',
-        description="The Task Tracker Django API provides endpoints for managing tasks, employees, "
-                    "and their interactions within the system.",
+        description="The electronics sales network model, a web application with an API interface and admin panel.",
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="307heito@gmail.com"),
         license=openapi.License(name="BSD License"),
