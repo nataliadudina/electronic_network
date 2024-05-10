@@ -62,6 +62,7 @@ REST API реализовано на Python и предоставляет сле
 > **python manage.py csu**
 
 Убедитесь, что в файле .env прописаны username и password для суперпользователя.
+
 8. Примените миграции: python manage.py migrate
 9. В проекте есть фикстуры с тестовыми данными для таблиц базы данных. Для загрузки используйте команду:
 > **python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixtures/сontacts_fixtures.json networks/fixtures/networks_fixtures.json**
