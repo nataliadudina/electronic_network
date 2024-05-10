@@ -58,16 +58,14 @@ REST API реализовано на Python и предоставляет сле
    \q 
 </pre>
    - Если вы используете другую базу данных, следуйте инструкциям по созданию базы данных для вашей СУБД. 
-7. Создайте суперпользователя, используя следующую команду: 
-***
-python manage.py csu
-***
+7. Создайте суперпользователя, используя следующую команду:
+> **python manage.py csu**
+
 Убедитесь, что в файле .env прописаны username и password для суперпользователя.
 8. Примените миграции: python manage.py migrate
 9. В проекте есть фикстуры с тестовыми данными для таблиц базы данных. Для загрузки используйте команду:
-<pre>
-python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixtures/сontacts_fixtures.json networks/fixtures/networks_fixtures.json
-</pre>
+> **python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixtures/сontacts_fixtures.json networks/fixtures/networks_fixtures.json**
+
 10. Запустите сервер: python manage.py runserver
 
 Подробная документация доступна по адресам:
