@@ -45,30 +45,28 @@ REST API реализовано на Python и предоставляет сле
 
 ## Установка и запуск проекта
 
-1. Клонируйте репозиторий: git clone git@github.com:nataliadudina/electronic_network.git
-2. Перейдите в каталог проекта: cd electronic_network
-3. Создайте файл .env в корневой директории проекта и добавьте в него необходимые переменные окружения. Пример содержимого файла .env есть в файле .env.sample
-4. Создайте (poetry init) и активируйте (poetry shell) виртуальное окружение (требуется предварительная установка poetry)
-5. Установите зависимости: poetry install
-6. **Создайте базу данных**:
-   - Если вы используете PostgreSQL, создайте базу данных, выполнив следующие команды в терминале:
-<pre>
-   psql -U <username>   # по умолчанию postgres
-   CREATE DATABASE tasktracker;
-   \q 
-</pre>
-   - Если вы используете другую базу данных, следуйте инструкциям по созданию базы данных для вашей СУБД. 
+1. Клонирование репозитория: git clone git@github.com:nataliadudina/electronic_network.git
+2. Переход в каталог проекта: cd electronic_network
+3. Создание файла.env: создайте файл .env в корневой директории проекта и добавьте в него необходимые переменные окружения. 
+Пример содержимого файла .env есть в файле .env.sample
+4. Сборка и запуск контейнеров: 
+***
+docker-compose up --build 
+***
+В процессе запуска контейнера будет автоматически применены миграции, а затем сервер будет запущен на порту 8000
+5. Доступ к приложению: после успешного запуска контейнеров приложение будет доступно по адресу http://localhost:8000. 
+6. Остановка и удаление контейнеров: docker-compose down 
 7. Создайте суперпользователя, используя следующую команду: 
-***
+<pre>
+docker exec -it app bash
 python manage.py csu
-***
+</pre>
 Убедитесь, что в файле .env прописаны username и password для суперпользователя.
-8. Примените миграции: python manage.py migrate
-9. В проекте есть фикстуры с тестовыми данными для таблиц базы данных. Для загрузки используйте команду:
-***
+8. В проекте есть фикстуры с тестовыми данными для таблиц базы данных. Для загрузки используйте команду:
+<pre>
+docker exec -it app bash
 python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixtures/сontacts_fixtures.json networks/fixtures/networks_fixtures.json
-***
-10. Запустите сервер: python manage.py runserver
+</pre>
 
 Подробная документация доступна по адресам:
 
@@ -76,4 +74,4 @@ python manage.py loaddata networks/fixtures/products_fixtures.json networks/fixt
 > 
 > **http://127.0.0.1:8000/redoc/**
 
-Все контроллеры покрыты тестами. Jбщее покрытие кода тестами 96%. Отчёт находится в файле **coverage_report.txt**  
+Все контроллеры покрыты тестами. Общее покрытие кода тестами 96%. Отчёт находится в файле **coverage_report.txt**  
